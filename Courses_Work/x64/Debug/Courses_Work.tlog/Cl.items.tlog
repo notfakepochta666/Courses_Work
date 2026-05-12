@@ -1,0 +1,17 @@
+C:\mamka\Courses_Work\Audio\AudioManager.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\AudioManager.obj
+C:\mamka\Courses_Work\Core\Game.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Game.obj
+C:\mamka\Courses_Work\Cutscenes\Cutscene.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Cutscene.obj
+C:\mamka\Courses_Work\Cutscenes\IntroCutscene.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\IntroCutscene.obj
+C:\mamka\Courses_Work\Entity\Collectible.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Collectible.obj
+C:\mamka\Courses_Work\Entity\Entity.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Entity.obj
+C:\mamka\Courses_Work\Entity\Obstacle.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Obstacle.obj
+C:\mamka\Courses_Work\Level\Camera.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Camera.obj
+C:\mamka\Courses_Work\Level\Level.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Level.obj
+C:\mamka\Courses_Work\main.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\main.obj
+C:\mamka\Courses_Work\Entity\Platform.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Platform.obj
+C:\mamka\Courses_Work\Entity\Player.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\Player.obj
+C:\mamka\Courses_Work\Physics\CollisionSystem.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\CollisionSystem.obj
+C:\mamka\Courses_Work\Scenes\GameScene.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\GameScene.obj
+C:\mamka\Courses_Work\Scenes\MenuScene.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\MenuScene.obj
+C:\mamka\Courses_Work\Scenes\SceneManager.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\SceneManager.obj
+C:\mamka\Courses_Work\Scenes\SettingsScene.cpp;C:\mamka\Courses_Work\Courses_Work\x64\Debug\SettingsScene.obj

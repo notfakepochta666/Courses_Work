@@ -1,0 +1,10 @@
+﻿  Game.cpp
+  Player.cpp
+C:\mamka\Courses_Work\Entity\Player.cpp(25,40): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+C:\mamka\Courses_Work\Entity\Player.cpp(25,40): warning C4244:         with
+C:\mamka\Courses_Work\Entity\Player.cpp(25,40): warning C4244:         [
+C:\mamka\Courses_Work\Entity\Player.cpp(25,40): warning C4244:             T=unsigned int
+C:\mamka\Courses_Work\Entity\Player.cpp(25,40): warning C4244:         ]
+  main.cpp
+  Создание кода...
+  Courses_Work.vcxproj -> C:\mamka\Courses_Work\x64\Debug\Courses_Work.exe
