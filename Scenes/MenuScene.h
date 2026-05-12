@@ -11,6 +11,10 @@ private:
     sf::FloatRect settingsBtn;
     sf::FloatRect exitBtn;
 
+    sf::RectangleShape playBtnHighlight;
+    sf::RectangleShape settingsBtnHighlight;
+    sf::RectangleShape exitBtnHighlight;
+
     bool isPlayHovered = false;
     bool isSettingsHovered = false;
     bool isExitHovered = false;
