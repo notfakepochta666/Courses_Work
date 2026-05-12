@@ -84,31 +84,43 @@ void Player::update(float dt, const std::vector<Platform>& platforms)
     sprite.setPosition(posX, posY);
 
     // =========================
-    // КОЛЛИЗИЯ
+    // КОЛЛИЗИЯ - УЛУЧШЕННАЯ СИСТЕМА
     // =========================
 
     inAir = true;
 
     sf::FloatRect playerBounds = sprite.getGlobalBounds();
 
+    // Для правильного позиционирования нужна половина высоты спрайта
+    // с учетом масштаба (так как origin внизу по центру)
+    sf::Vector2u playerSize = walk[frame].getSize();
+    float playerHeight = playerSize.y * sprite.getScale().y;
+
     for (const auto& p : platforms)
     {
-        sf::FloatRect plat = p.getBounds();
+        sf::FloatRect platBounds = p.getBounds();
 
-        if (playerBounds.intersects(plat))
+        if (playerBounds.intersects(platBounds))
         {
-            // приземление только сверху
+            // ✅ ПРИЗЕМЛЕНИЕ СВЕРХУ: котик падал вниз на платформу
+            // Проверяем, что предыдущая позиция была выше платформы
             if (velocityY > 0)
             {
-                // ✅ Корректное позиционирование: котенок стоит ровно на платформе
-                posY = plat.top;
+                // Проверяем, что котик приходит именно сверху
+                // (предыдущая Y была выше платформы)
+                float prevY = posY - velocityY * dt;
+                if (prevY <= platBounds.top + 5.f)  // небольшой допуск для корректности
+                {
+                    // 🎯 ПРАВИЛЬНАЯ ПОЗИЦИЯ: котик стоит ровно на платформе
+                    // Поскольку origin внизу спрайта, то posY = верх платформы
+                    posY = platBounds.top;
 
-                velocityY = 0.f;
-                inAir = false;
+                    velocityY = 0.f;
+                    inAir = false;
 
-                sprite.setPosition(posX, posY);
-
-                playerBounds = sprite.getGlobalBounds();
+                    sprite.setPosition(posX, posY);
+                    playerBounds = sprite.getGlobalBounds();
+                }
             }
         }
     }

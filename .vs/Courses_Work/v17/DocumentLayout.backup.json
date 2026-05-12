@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|C:\\mamka\\Courses_Work\\Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|solutionrelative:Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|C:\\mamka\\Courses_Work\\Core\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|solutionrelative:Core\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|C:\\mamka\\Courses_Work\\Scenes\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|solutionrelative:Scenes\\GameScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|C:\\mamka\\Courses_Work\\Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|solutionrelative:Entity\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22C56A24-5A69-4B5E-A2A8-941768EF4850}|Courses_Work.vcxproj|C:\\mamka\\Courses_Work\\Core\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -76,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IntroCutscene.cpp",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Cutscenes\\IntroCutscene.cpp",
               "RelativeDocumentMoniker": "Cutscenes\\IntroCutscene.cpp",
@@ -84,12 +84,11 @@
               "RelativeToolTip": "Cutscenes\\IntroCutscene.cpp",
               "ViewState": "AgIAAEsAAAAAAAAAAAAuwGoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-12T20:00:48.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T20:00:48.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IntroCutscene.h",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Cutscenes\\IntroCutscene.h",
               "RelativeDocumentMoniker": "Cutscenes\\IntroCutscene.h",
@@ -97,12 +96,11 @@
               "RelativeToolTip": "Cutscenes\\IntroCutscene.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwB8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-12T20:00:48.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T20:00:48.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Core\\Game.cpp",
               "RelativeDocumentMoniker": "Core\\Game.cpp",
@@ -110,8 +108,7 @@
               "RelativeToolTip": "Core\\Game.cpp",
               "ViewState": "AgIAAHkAAAAAAAAAAAAuwJgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-12T19:21:14.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:21:14.693Z"
             },
             {
               "$type": "Document",
@@ -123,12 +120,11 @@
               "RelativeToolTip": "Core\\Game.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-12T19:21:13.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:21:13.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GameScene.cpp",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Scenes\\GameScene.cpp",
               "RelativeDocumentMoniker": "Scenes\\GameScene.cpp",
@@ -136,12 +132,11 @@
               "RelativeToolTip": "Scenes\\GameScene.cpp",
               "ViewState": "AgIAAA8AAAAAAAAAAAAuwC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-12T19:20:15.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:20:15.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GameScene.h",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Scenes\\GameScene.h",
               "RelativeDocumentMoniker": "Scenes\\GameScene.h",
@@ -149,12 +144,11 @@
               "RelativeToolTip": "Scenes\\GameScene.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-12T19:20:12.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:20:12.938Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MenuScene.cpp",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Scenes\\MenuScene.cpp",
               "RelativeDocumentMoniker": "Scenes\\MenuScene.cpp",
@@ -162,12 +156,11 @@
               "RelativeToolTip": "Scenes\\MenuScene.cpp",
               "ViewState": "AgIAAC4AAAAAAAAAAAAuwE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-12T19:19:52.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:19:52.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MenuScene.h",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Scenes\\MenuScene.h",
               "RelativeDocumentMoniker": "Scenes\\MenuScene.h",
@@ -175,25 +168,24 @@
               "RelativeToolTip": "Scenes\\MenuScene.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-12T19:19:49.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:19:49.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Entity\\Player.cpp",
               "RelativeDocumentMoniker": "Entity\\Player.cpp",
               "ToolTip": "C:\\mamka\\Courses_Work\\Entity\\Player.cpp",
               "RelativeToolTip": "Entity\\Player.cpp",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAswK4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAwLoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-12T19:16:17.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\mamka\\Courses_Work\\Entity\\Player.h",
               "RelativeDocumentMoniker": "Entity\\Player.h",
@@ -201,8 +193,7 @@
               "RelativeToolTip": "Entity\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-12T19:16:24.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-12T19:16:24.286Z"
             }
           ]
         }
