@@ -23,9 +23,11 @@ private:
     bool inAir = false;
     bool right = true;
     bool moving = false;
+    bool jumpPressed = false;
 
     float animTimer = 0.f;
     int frame = 0;
+    int walkDirection = 1;
 
 public:
     void load();

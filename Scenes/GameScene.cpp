@@ -20,11 +20,28 @@ void GameScene::handleEvent(sf::Event& event, sf::RenderWindow& window, int& sta
     }
 }
 
-void GameScene::update(float dt)
+void GameScene::update(sf::RenderWindow& window)
 {
+    sf::Vector2f mouse = window.mapPixelToCoords(
+        sf::Mouse::getPosition(window));
+
+    isSettingsHovered = settingsBtn.getGlobalBounds().contains(mouse);
 }
 
 void GameScene::draw(sf::RenderWindow& window)
 {
+    // ===== ондяберйю =====
+    if (isSettingsHovered)
+    {
+        sf::RectangleShape highlight(sf::Vector2f(
+            settingsBtn.getGlobalBounds().width,
+            settingsBtn.getGlobalBounds().height));
+        highlight.setPosition(
+            settingsBtn.getGlobalBounds().left,
+            settingsBtn.getGlobalBounds().top);
+        highlight.setFillColor(sf::Color(255, 255, 255, 100));
+        window.draw(highlight);
+    }
+
     window.draw(settingsBtn);
 }

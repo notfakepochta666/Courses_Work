@@ -42,7 +42,7 @@ void Game::update()
     // GAME
     if (state == 2)
     {
-        game.update(dt);
+        game.update(window);
         player.update(dt, level.getPlatforms());
 
         level.update(player.getX());
@@ -53,6 +53,12 @@ void Game::update()
 
             level.resetSwitch();
         }
+    }
+
+    // MENU
+    if (state == 0)
+    {
+        menu.update(window);
     }
 }
 
@@ -112,7 +118,7 @@ void Game::processEvents()
         // ================= CUTSCENE =================
         else if (state == 3)
         {
-            intro.handleEvent(event);
+            intro.handleEvent(event, window);
         }
     }
 }

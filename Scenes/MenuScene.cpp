@@ -37,7 +37,42 @@ void MenuScene::handleEvent(sf::Event& event, sf::RenderWindow& window, int& sta
     }
 }
 
+void MenuScene::update(sf::RenderWindow& window)
+{
+    sf::Vector2f mouse = window.mapPixelToCoords(
+        sf::Mouse::getPosition(window));
+
+    isPlayHovered = playBtn.contains(mouse);
+    isSettingsHovered = settingsBtn.contains(mouse);
+    isExitHovered = exitBtn.contains(mouse);
+}
+
 void MenuScene::draw(sf::RenderWindow& window)
 {
     window.draw(background);
+
+    // ===== ПОДСВЕТКА КНОПОК =====
+    if (isPlayHovered)
+    {
+        sf::RectangleShape highlight(sf::Vector2f(playBtn.width, playBtn.height));
+        highlight.setPosition(playBtn.left, playBtn.top);
+        highlight.setFillColor(sf::Color(255, 255, 255, 100));
+        window.draw(highlight);
+    }
+
+    if (isSettingsHovered)
+    {
+        sf::RectangleShape highlight(sf::Vector2f(settingsBtn.width, settingsBtn.height));
+        highlight.setPosition(settingsBtn.left, settingsBtn.top);
+        highlight.setFillColor(sf::Color(255, 255, 255, 100));
+        window.draw(highlight);
+    }
+
+    if (isExitHovered)
+    {
+        sf::RectangleShape highlight(sf::Vector2f(exitBtn.width, exitBtn.height));
+        highlight.setPosition(exitBtn.left, exitBtn.top);
+        highlight.setFillColor(sf::Color(255, 255, 255, 100));
+        window.draw(highlight);
+    }
 }

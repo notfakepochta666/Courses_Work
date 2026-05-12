@@ -69,11 +69,12 @@ void IntroCutscene::update(float dt)
         finished = true;
 }
 
-void IntroCutscene::handleEvent(sf::Event& event)
+void IntroCutscene::handleEvent(sf::Event& event, sf::RenderWindow& window)
 {
     if (event.type == sf::Event::MouseButtonPressed)
     {
-        sf::Vector2f mouse(event.mouseButton.x, event.mouseButton.y);
+        sf::Vector2f mouse = window.mapPixelToCoords(
+            sf::Mouse::getPosition(window));
 
         // ⭐ СКИП ТОЛЬКО ЕСЛИ КЛИК ПО КНОПКЕ
         if (skipBtn.getGlobalBounds().contains(mouse))
@@ -85,7 +86,18 @@ void IntroCutscene::draw(sf::RenderWindow& window)
 {
     window.draw(sprite);
 
-    window.draw(skipBtn);
+    // ===== ПОДСВЕТКА SKIP =====
+    if (isSkipHovered)
+    {
+        sf::RectangleShape highlight = skipBtn;
+        highlight.setFillColor(sf::Color(100, 100, 100, 200));
+        window.draw(highlight);
+    }
+    else
+    {
+        window.draw(skipBtn);
+    }
+
     window.draw(skipText);
 }
 

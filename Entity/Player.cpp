@@ -55,10 +55,18 @@ void Player::update(float dt, const std::vector<Platform>& platforms)
     // =========================
 
     if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Space) ||
-        sf::Keyboard::isKeyPressed(sf::Keyboard::W)) && !inAir)
+        sf::Keyboard::isKeyPressed(sf::Keyboard::W)) && !inAir && !jumpPressed)
     {
         velocityY = jumpForce;
         inAir = true;
+        jumpPressed = true;
+    }
+
+    // Отпустили кнопку - можно прыгнуть снова
+    if (!sf::Keyboard::isKeyPressed(sf::Keyboard::Space) &&
+        !sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+    {
+        jumpPressed = false;
     }
 
     // =========================
@@ -92,6 +100,7 @@ void Player::update(float dt, const std::vector<Platform>& platforms)
             // приземление только сверху
             if (velocityY > 0)
             {
+                // ✅ Корректное позиционирование: котенок стоит ровно на платформе
                 posY = plat.top;
 
                 velocityY = 0.f;
@@ -115,21 +124,36 @@ void Player::update(float dt, const std::vector<Platform>& platforms)
         if (animTimer >= 0.15f)
         {
             animTimer = 0.f;
-            frame++;
+            frame += walkDirection;
 
-            if (frame >= walk.size())
-                frame = 0;
+            // Пинг-понг анимация ходьбы
+            if (frame >= (int)walk.size() - 1)
+                walkDirection = -1;
+            else if (frame <= 0)
+                walkDirection = 1;
         }
 
         sprite.setTexture(walk[frame]);
     }
     else if (inAir)
     {
-        sprite.setTexture(jump[0]);
+        // Анимация прыжка синхронизирована с физикой
+        if (velocityY < -100.f)
+            sprite.setTexture(jump[0]);  // взлёт вверх активный
+        else if (velocityY < -50.f)
+            sprite.setTexture(jump[1]);  // взлёт замедляется
+        else if (velocityY < 50.f)
+            sprite.setTexture(jump[3]);  // ⭐ пик прыжка (нулевая скорость)
+        else if (velocityY < 200.f)
+            sprite.setTexture(jump[4]);  // начало падения
+        else
+            sprite.setTexture(jump[5]);  // быстрое падение
     }
     else
     {
         sprite.setTexture(walk[0]);
+        frame = 0;
+        walkDirection = 1;
     }
 
     // =========================
